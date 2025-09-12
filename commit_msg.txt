@@ -1,0 +1,23 @@
+feat: Enhanced SAFE with Process Simulation and UI Improvements
+
+- Added process simulation for EDR/XDR testing
+  - OS-specific process patterns with MITRE mappings
+  - Detection guidance for each pattern
+  - Generates benign test scripts
+
+- Improved UI/UX
+  - Step-by-step workflow guidance
+  - Current status display
+  - OS-specific icons (🪟 🍎 )
+  - Enhanced documentation
+
+- Added threat actor profiles
+  - FIN7, APT29 TTPs
+  - Detailed IOC patterns
+  - MITRE technique mappings
+
+Testing: Validates detection of suspicious:
+- Process creation
+- Command-line arguments
+- Parent-child relationships
+- Persistence mechanisms
