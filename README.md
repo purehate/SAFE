@@ -2,7 +2,7 @@
 
 ---
 
-## 📖 Description  
+## Description  
 SAFE is a **non-destructive ransomware simulator**. Instead of encrypting real files, it creates a folder on your Desktop and fills it with fake “encrypted” files, tagged with common ransomware extensions.  
 
 It’s designed for **purple team exercises, detection engineering, and EDR/SIEM validation** — with zero risk to production systems.  
@@ -23,6 +23,17 @@ And yes, it’s got a TrustedSec vibe — because no tool is complete without so
 - Optional ransom note to test detection of suspicious file drops  
 - Safe cleanup option to remove the generated folder  
 
+Menu options let you:
+- Select a fake ransomware extension
+- Set how many files to generate
+- Toggle ransom note on/off
+- Run the simulation
+- Clean up the last simulation folder
+
+All output is stored in a new folder under your Desktop, e.g.:
+
+~/Desktop/RansomSim-20250903-153200/
+
 ---
 
 ## Usage  
@@ -33,7 +44,7 @@ Run the tool with Python 3:
 python3 SAFE.py
 ```
 
-## Disclaimer--
+## Disclaimer
 
 - SAFE does not encrypt or modify any existing files. It only creates new dummy files inside a controlled folder. It is provided “as-is” for educational, research, and detection engineering purposes.
 
